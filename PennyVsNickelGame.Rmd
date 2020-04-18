@@ -1,7 +1,7 @@
 ---
 title: "Activity: Penny vs Nickel Game"
-author: "NAME"
-date: "DATE"
+author: "Eric weah"
+date: "4/18/2020"
 output: html_notebook
 ---
 
@@ -39,25 +39,24 @@ Here are a few remarks about game play:
 
 #### First round?
 
-Pennies: 
+Pennies: 11
 
-Nickels: 
-
+Nickels: 111
 <br>
 
 #### 2. Second round?
 
-Pennies: 
+Pennies: 11
 
-Nickels: 
+Nickels: 111
 
 <br>
 
 #### 3. Third round?
 
-Pennies: 
+Pennies: 11
 
-Nickels: 
+Nickels: 111
 
 <br>
 
