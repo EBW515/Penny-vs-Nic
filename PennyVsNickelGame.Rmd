@@ -144,14 +144,82 @@ SpinB <- c("Penny", "Penny","Penny","Nickel","Nickel", "Nickel")
 PennyW<- 0
 NickelW<-0
 PennyT<- 0
-NickelT<-
+NickelT<-0
+SimIt=100
+i=1
+for(i in 1:SimIt){
+  while (PennyW + NickelW<9) {
+    x<- sample(SpinB,1)
+    if(x=="Penny")
+    {
+      PennyW<- PennyW+1
+    }
+    else
+    {
+      NickelW <- NickelW +1
+    }
+  }
+  if(PennyW>=5){
+    PennyT<- PennyT+1
+    PennyW<-0
+    NickelW<-0
+  }
+  else
+  {
+    NickelT<-NickelT+1
+    PennyW<-0
+    NickelW<-0
+  }
+}
+Probability<- c(PennyT/SimIt)
+Result <- c("Estimated:", Probability,"Observed:", round(Probability,2))
+print(Result)
+print(PennyT)
+print(NickelT)
+
 ```
 
 <br>
 
 **Step 4: write an R script for your simulation using Spinner A**
-
-
+```{r}
+SpinA <- c("Penny", "Penny","Penny","Nickel","Nickel", "Nickel")
+PennyW<- 0
+NickelW<-0
+PennyT<- 0
+NickelT<-0
+SimIt=100
+i=1
+for(i in 1:SimIt){
+  while (PennyW + NickelW<9) {
+    x<- sample(SpinA,1)
+    if(x=="Penny")
+    {
+      PennyW<- PennyW+1
+    }
+    else
+    {
+      NickelW <- NickelW +1
+    }
+  }
+  if(PennyW>=5){
+    PennyT<- PennyT+1
+    PennyW<-0
+    NickelW<-0
+  }
+  else
+  {
+    NickelT<-NickelT+1
+    PennyW<-0
+    NickelW<-0
+  }
+}
+Probability<- c(PennyT/SimIt)
+Result <- c("Estimated:", Probability,"Observed:", round(Probability,2))
+print(Result)
+print(PennyT)
+print(NickelT)
+```
 
 <br>
 
