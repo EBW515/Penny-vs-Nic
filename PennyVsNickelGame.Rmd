@@ -39,24 +39,24 @@ Here are a few remarks about game play:
 
 #### First round?
 
-Pennies: 11
+Pennies: 5
 
-Nickels: 111
+Nickels: 3
 <br>
 
 #### 2. Second round?
 
-Pennies: 11
+Pennies: 2
 
-Nickels: 111
+Nickels: 5
 
 <br>
 
 #### 3. Third round?
 
-Pennies: 11
+Pennies: 5
 
-Nickels: 111
+Nickels: 4
 
 <br>
 
@@ -86,16 +86,16 @@ While intuition can sometimes be flawed, we should at least think about what kin
 <br>
 
 **Will the probability that "Penny" wins a round in the game be higher for Spinner A or Spinner B?  Why?**
-
+The probability would be higher in spinner A becuase of the amount of pennies
 <br>
 
 
 **State a LOWER bound for your estimate for Spinner A (greater than 0)\, and explain your reasoning:**
-
+the lower bounds should be 1/6 because is has to be a outcome out of the amount of pennies 
 <br>
 
 **State an UPPER bound for your estimate for Spinner A (less than 1), and explain your reasoning:**
-
+it has to be at most 5 out of the 6 times the spinner lands on a coin. the game is won at the 5th time
 <br>
 
 
@@ -139,7 +139,13 @@ Since we know the answer for Spinner B is going to be 0.50, write the simulation
 
 *Note: Your simulated probability should be correct when rounded to 2 digits.  Make sure you try the simulation a few times to verify that the second decimal place does not change from one attempt to the next.*
 
-
+```{r}
+SpinB <- c("Penny", "Penny","Penny","Nickel","Nickel", "Nickel")
+PennyW<- 0
+NickelW<-0
+PennyT<- 0
+NickelT<-
+```
 
 <br>
 
