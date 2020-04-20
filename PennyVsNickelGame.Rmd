@@ -183,7 +183,7 @@ print(NickelT)
 
 **Step 4: write an R script for your simulation using Spinner A**
 ```{r}
-SpinA <- c("Penny", "Penny","Penny","Nickel","Nickel", "Nickel")
+SpinA <- c("Penny", "Penny","Penny","Penny","Nickel", "Nickel")
 PennyW<- 0
 NickelW<-0
 PennyT<- 0
@@ -227,6 +227,6 @@ print(NickelT)
 
 State the Probability that Penny Wins when using Spinner A (accurate to two digits).
 
-
+the probability of penny winning using spinner A is 85%
 
 
